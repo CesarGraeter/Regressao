@@ -45,8 +45,11 @@ else:
 if d.weekday() >=5:
    workingday = 0
 
+#ws = st.selectbox('Situação do tempo',
+#     ('1: Clear, Few clouds, Partly cloudy, Partly cloudy', '2: Mist + Cloudy, Mist + Broken clouds, Mist + Few #clouds, Mist', '3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds','4: #Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog'))
+
 ws = st.selectbox('Situação do tempo',
-     ('1: Clear, Few clouds, Partly cloudy, Partly cloudy', '2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist', '3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds','4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog'))
+     (Weathersit))
 
 if ws == '1: Clear, Few clouds, Partly cloudy, Partly cloudy':
    ws = 1
