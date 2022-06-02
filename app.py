@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import datetime
 #import joblib
+import sklearn
 from sklearn.externals import joblib
 
 def celsius(f):
