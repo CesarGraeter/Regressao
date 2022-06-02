@@ -107,6 +107,6 @@ weekday = d.weekday()
 
 modelo_arquivo = joblib.load('mod_01.pkl')
 # 'day','mnth','year','season','holiday','weekday','workingday','weathersit','temp','atemp','hum','windspeed'
-x = [[d.day,d.month,d.year,season,h,d.weekday(),workingday,Weathersit,t,at,h,s]]
+x = [[d.day,d.month,d.year,season,h,d.weekday(),workingday,ws,t,at,h,s]]
 val = modelo_arquivo.predict(x)
 st.write('A previsão de aluguel é de ', int(val[0]), ' bicicletas')
