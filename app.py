@@ -60,13 +60,13 @@ if ws == '4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog':
 t = st.slider('Temperatura em graus celsius', float(celsius(MinTemp)), float(celsius(MaxTemp)), float(celsius(AvgTemp)))
 t = fahr(t)
 
-at = st.slider('Sensação térmica em graus celsius', celsius(MinaTemp), celsius(MaxaTemp), celsius(AvgaTemp))
+at = st.slider('Sensação térmica em graus celsius', float(celsius(MinaTemp)), float(celsius(MaxaTemp)), float(celsius(AvgaTemp)))
 at = fahr(at)
 
-h = st.slider('Humidade relativa %', MinHum * 100, MaxHum * 100, AvgHum * 100)
+h = st.slider('Humidade relativa %', float(MinHum * 100), float(MaxHum * 100), float(AvgHum * 100))
 h = h / 100
 
-s = st.slider('Velocidade do vento km/h', MinWspeed * 67, MaxWspeed * 67, AvgWspeed * 67)
+s = st.slider('Velocidade do vento km/h', float(MinWspeed * 67), float(MaxWspeed * 67), float(AvgWspeed * 67))
 s = s / 67
 
 # 1 de 21-12 ate 20-03
