@@ -32,7 +32,7 @@ MaxWspeed = bike['windspeed'].max()
 MinWspeed = bike['windspeed'].min()
 AvgWspeed = bike['windspeed'].mean()
 
-d = st.date_input("escolha a data para previsão", datetime.date(2013, 1, 1), min_value=datetime.date(2013, 1, 1), max_value=datetime.date(2013, 12, 31),)
+d = st.date_input("escolha a data para previsão (restrito ao calendário de 2013)", datetime.date(2013, 1, 1), min_value=datetime.date(2013, 1, 1), max_value=datetime.date(2013, 12, 31),)
 
 hd = st.checkbox('É feriado ?')
 if hd:
