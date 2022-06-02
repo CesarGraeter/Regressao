@@ -57,7 +57,7 @@ if ws == '3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rai
 if ws == '4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog':
    ws = 4
 
-t = st.slider('Temperatura em graus celsius', celsius(MinTemp), celsius(MaxTemp), celsius(AvgTemp))
+t = st.slider('Temperatura em graus celsius', float(celsius(MinTemp)), float(celsius(MaxTemp)), float(celsius(AvgTemp)))
 t = fahr(t)
 
 at = st.slider('Sensação térmica em graus celsius', celsius(MinaTemp), celsius(MaxaTemp), celsius(AvgaTemp))
